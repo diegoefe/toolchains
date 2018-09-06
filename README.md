@@ -5,7 +5,7 @@ Experiments with toolchains
 - Install CMake 3.5*
 - mkdir ../_build_
 - cd ../_build_
-- To build do one of this things:
+- To build do one of those two things:
    1. cmake -DCMAKE_TOOLCHAIN_FILE=../toolchains/arm-tc.cmake ../toolchains
    1. add include(arm-tc.cmake) to CMakeLists.txt and cmake ../toolchains
 
