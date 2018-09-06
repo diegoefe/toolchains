@@ -12,11 +12,11 @@ Experiments with toolchains
 ## Ubuntu 64 notes
 Install 32 bit compatibility (https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit)
 
+```bash
 sudo dpkg --add-architecture i386
 sudo apt-get update
-sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
-
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i38
 sudo apt-get install multiarch-support
+# libs
 sudo apt-get install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386
-
-
+```
