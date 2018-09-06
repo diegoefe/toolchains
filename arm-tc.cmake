@@ -11,7 +11,8 @@ set(bin ${base}/bin)
 # specify the cross compiler
 set(arch arm-fullhan-linux-uclibcgnueabi)
 SET(CMAKE_C_COMPILER   ${bin}/${arch}-cc)
-SET(CMAKE_CXX_COMPILER ${bin}/${arch}-c++)
+# SET(CMAKE_CXX_COMPILER ${bin}/${arch}-c++)
+SET(CMAKE_CXX_COMPILER ${bin}/${arch}-g++)
 
 # where is the target environment
 #SET(CMAKE_FIND_ROOT_PATH  /opt/eldk-2007-01-19/ppc_74xx /home/alex/eldk-ppc74xx-inst)
