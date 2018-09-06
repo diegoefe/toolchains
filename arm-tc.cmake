@@ -5,11 +5,11 @@ set(CMAKE_SYSTEM_PROCESSOR arm)
 #this one not so much
 SET(CMAKE_SYSTEM_VERSION 1)
 
-set(arch arm-fullhan-linux-uclibcgnueabi)
 set(base $ENV{HOME}/work/arm-fullhan-linux-uclibcgnueabi/arm-fullhan-linux-uclibcgnueabi)
 set(bin ${base}/bin)
 
 # specify the cross compiler
+set(arch arm-fullhan-linux-uclibcgnueabi)
 SET(CMAKE_C_COMPILER   ${bin}/${arch}-cc)
 SET(CMAKE_CXX_COMPILER ${bin}/${arch}-c++)
 
@@ -23,6 +23,6 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
-
+# stripping for release builds
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -s")
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -s")
