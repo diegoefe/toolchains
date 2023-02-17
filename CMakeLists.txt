@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(tctest)
 
-include(arm-tc.cmake)
+# include(arm-tc.cmake)
+include(android-tc.cmake)
 
 set(CMAKE_BUILD_TYPE Release)
 
